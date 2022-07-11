@@ -4,5 +4,5 @@
     [nome_giocatore] VARCHAR(50) NOT NULL, 
     [punteggio] INT NOT NULL, 
     [numero_partite] INT NOT NULL, 
-    [data_partita] DATE NOT NULL
+    [data_partita] DATETIME NOT NULL
 )
