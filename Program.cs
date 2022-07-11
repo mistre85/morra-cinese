@@ -110,7 +110,7 @@ else
         query = "INSERT INTO classifica (nome_giocatore,punteggio,numero_partite,data_partita) values(@nome,@punteggio,@partite,@data)";
         cmd = new SqlCommand(query, conn);
 
-        cmd.Parameters.Add(new SqlParameter("@data", DateTime.Today));
+        cmd.Parameters.Add(new SqlParameter("@data", DateTime.Now));
 
         for (int partita = 0; partita < numeroPartite; partita++)
         {
